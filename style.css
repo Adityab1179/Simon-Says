@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-size: cover;
+    background-image: url(dark_red_black_background_design_hd_red_and_black_aesthetic-1280x720.jpg);
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(241, 203, 170);
+    padding: 30px 0px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 40%;
+    height: 50%;
+    border-radius: 41px;
+}
+
+.box-lev-1 {
+    display: flex;
+}
+
+.box {
+    margin: 1.5rem;
+    width: 150px;
+    height: 150px;
+    border: 10px solid black;
+    border-radius: 15px;
+}
+
+.red {
+    background-color: rgba(255, 0, 0, 0.850);
+}
+
+.yellow {
+    background-color: rgba(255, 255, 0, 0.850);
+}
+
+.green {
+    background-color: rgba(0, 128, 0, 0.850);
+}
+
+.purple {
+    background-color: purple;
+}
+
+.flash {
+    background-color: rgb(179, 179, 179);
+}
+
+.flash-green {
+    background-color: rgb(255, 255, 255);
+}
+
+@media (max-width:720px) {
+    .box {
+        margin: 1rem;
+        width: 150px;
+        height: 150px;
+    }
+
+    .container {
+        font-size: .9rem;
+    }
+
+}
+
+@media (max-width:600px) {
+    .box {
+        margin: 1rem;
+        width: 130px;
+        height: 130px;
+    }
+
+    .container {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width:400px) {
+    .box {
+        margin: 1rem;
+        width: 100px;
+        height: 100px;
+    }
+
+    .container {
+        font-size: .7rem;
+    }
+
+}
