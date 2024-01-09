@@ -6,6 +6,7 @@ let level = 0;
 let startbtn=document.querySelector("button")
 let btns = document.querySelectorAll(".box");
 startbtn.addEventListener("click", start);
+document.addEventListener("keypress",start)
 function start(){
   if (started == false) {
     level=0;
@@ -15,6 +16,7 @@ function start(){
       levelUp();
     }, 500);
   }
+  startbtn.style.display="none";
 }
 function levelUp() {
   level++;
@@ -58,6 +60,7 @@ function validate(size) {
     } else {
       h2.innerText = "Game Over! Press any key to start";
       started = false;
+      startbtn.style.display="block";
       document.removeEventListener("keypress", start);
       document.addEventListener("keypress", start);
     }
