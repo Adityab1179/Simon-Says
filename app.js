@@ -3,14 +3,13 @@ let userseq = [];
 let h2 = document.querySelector("h2");
 let started = false;
 let level = 0;
-let startbtn=document.querySelector("button")
+let startbtn=document.querySelector(".start")
 let btns = document.querySelectorAll(".box");
 startbtn.addEventListener("click", start);
 document.addEventListener("keypress",start)
 function start(){
   if (started == false) {
     level=0;
-    console.log("started");
     started = true;
     setTimeout(() => {
       levelUp();
@@ -42,7 +41,6 @@ function btnclicked() {
     setTimeout(function () {
       btn.classList.remove("flash-green");
     }, 250);
-    console.log(userseq);
     validate(userseq.length - 1);
   }
 }
@@ -55,7 +53,6 @@ function validate(size) {
     if (userseq[size] === gameseq[size]) {
       if (userseq.length === gameseq.length) {
         setTimeout(levelUp, 1000);
-        console.log("right");
       }
     } else {
       h2.innerText = "Game Over! Press any key to start";
