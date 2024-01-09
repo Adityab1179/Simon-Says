@@ -18,7 +18,7 @@
 .how-to-play{
     gap: 20px;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     width: 100%;
     color: white;
