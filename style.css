@@ -118,7 +118,7 @@
     }
 }
 
-@media (max-width:420px) {
+@media (max-width:450px) {
     .box {
         margin: 1rem;
         width: 100px;
