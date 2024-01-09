@@ -3,8 +3,9 @@ let userseq = [];
 let h2 = document.querySelector("h2");
 let started = false;
 let level = 0;
+let startbtn=document.querySelector("button")
 let btns = document.querySelectorAll(".box");
-document.addEventListener("keypress", start);
+startbtn.addEventListener("click", start);
 function start(){
   if (started == false) {
     level=0;
